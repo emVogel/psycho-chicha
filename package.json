@@ -9,12 +9,10 @@
     "build:dev": "webpack",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
     "prettier:check": "prettier --check ./src",
-    "prettier:fix": "prettier --write ./src",
+    "prettier:fix": "prettier --write ./src"
   },
-  "lint-staged": {
-      "*.{js,ts, md}": ["npm run lint", "npm run prettier:write"]
-    },
-    "husky": {
+  "lint-staged": { "src/**/*.{ts, md}": ["npm run prettier:check"]},
+  "husky": {
         "hooks": {
           "pre-commit": "lint-staged"
         }
