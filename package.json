@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build:dev": "webpack",
+    "build:dev": "rm -r ./dist && webpack",
+    "build" : "rm -r ./dist && webpack --mode production",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
     "prettier:check": "prettier --check ./src",
     "prettier:fix": "prettier --write ./src"
