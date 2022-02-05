@@ -5,6 +5,11 @@ export class App extends React.Component<unknown, unknown> {
     super(props);
   }
   public render(): JSX.Element {
-    return <h1>A Headline</h1>;
+    return (
+      <>
+        <h1>A Headline</h1>
+        <p>a headline`s servant</p>
+      </>
+    );
   }
 }

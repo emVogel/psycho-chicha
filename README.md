@@ -16,6 +16,8 @@ Run `npm run start` to start the dev server. The page reloads automatically on c
 
 Run `npm run lint` for eslint
 
+If you want to choose a different eslint rule setting for react syntax see also [https://github.com/yannickcr/eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
+
 Run `npm run prettier:check` to check if your code is conform with prettier rules or `npm run prettier:fix` to format your code as defined by prettier rules.
 
 ### build a package
